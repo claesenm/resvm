@@ -15,7 +15,7 @@ An overview of task specific arguments is shown using "./resvm.py help <task>".
 
 Training and testing data files must be provided in LIBSVM format, e.g.
 label index_1:value_1 index_2:value_2 ... index_n:value_n
-nsemblesvm
+
 
 This script generates intermediate files in a folder of your choosing. 
 The EnsembleSVM library is used as a back-end and must be installed.
