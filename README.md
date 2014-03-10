@@ -1,9 +1,7 @@
-Script for the Robust Ensemble of SVMs (RESVM) method. This script is a
-driver for the EnsembleSVM software, which can be obtained at:
-  http://esat.kuleuven.be/stadius/ensemblesvm
-
-For algorithm details, please refer to:
+Script for the Robust Ensemble of SVMs (RESVM) method. For algorithm details, 
+please refer to:
     ftp://ftp.esat.kuleuven.be/pub/SISTA/claesenm/reports/14-22.pdf
+
 If you use this software in research, please cite the associated paper.
 
 This script allows you to perform the following tasks:
@@ -12,15 +10,17 @@ predict        : predict with an existing RESVM model.
 cross-validate : perform k-fold cross-validation for a parameter tuple.
 grid-search    : select an optimal parameter tuple (+optionally train model).
 
-To perform a specific task, please call "./resvm.py <task> options".
+To perform a specific task, call "./resvm.py <task> options".
 An overview of task specific arguments is shown using "./resvm.py help <task>".
 
 Training and testing data files must be provided in LIBSVM format, e.g.
 <label> <index 1>:<value 1> <index 2>:<value 2> ... <index n>:<value n>
+nsemblesvm
 
 This script generates intermediate files in a folder of your choosing. 
 The EnsembleSVM library is used as a back-end and must be installed.
-EnsembleSVM is freely available at: http://esat.kuleuven.be/stadius/ensemblesvm/.
+EnsembleSVM is freely available at: 
+  http://esat.kuleuven.be/stadius/ensemblesvm/
 
 General options related to EnsembleSVM, usable in all tasks listed above:
 esvm-prefix : prefix used in all EnsembleSVM executables (default '').
