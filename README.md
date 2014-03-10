@@ -23,6 +23,10 @@ For additional information, updates or bug reports, please refer to:
 
 #### Example
 
+As an example we have included one pair of training and test sets used in the associated paper.
+These data sets are based on MNIST with digit 7 as positive, with 50 positives and 2000 unlabeled
+instances. The provided positive and unlabeled sets contain 10% contamination.
+
 Train an RESVM with 200 base models, each trained using 10 positives and 100 unlabeled instances.
 The resulting model will be saved in `model.txt`.
 ```bash
