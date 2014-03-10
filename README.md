@@ -21,6 +21,21 @@ For additional information, updates or bug reports, please refer to:
 
 ---
 
+#### EnsembleSVM
+
+This script generates intermediate files in a folder of your choosing. 
+The EnsembleSVM library is used as a back-end and must be installed.
+EnsembleSVM is freely available at: 
+  http://esat.kuleuven.be/stadius/ensemblesvm/
+
+General options related to EnsembleSVM, usable in all tasks listed above:
+- `esvm-prefix` : prefix used in all EnsembleSVM executables (default '').
+- `esvm-suffix` : suffix used in all EnsembleSVM executables (default '').
+- `work-dir`    : working directory to use for intermediate files (default '`/tmp/`').
+- `noclean`     : retain intermediate files (flag, default: remove intermediates).
+
+---
+
 #### Example
 
 As an example we have included one pair of training and test sets used in the associated paper.
@@ -40,18 +55,3 @@ contains predicted labels in the first column and decision values in the second.
 ```
 
 To compute area under the PR and ROC curves, please use `./evaluate.py` (requires scikit-learn).
-
----
-
-#### EnsembleSVM
-
-This script generates intermediate files in a folder of your choosing. 
-The EnsembleSVM library is used as a back-end and must be installed.
-EnsembleSVM is freely available at: 
-  http://esat.kuleuven.be/stadius/ensemblesvm/
-
-General options related to EnsembleSVM, usable in all tasks listed above:
-- `esvm-prefix` : prefix used in all EnsembleSVM executables (default '').
-- `esvm-suffix` : suffix used in all EnsembleSVM executables (default '').
-- `work-dir`    : working directory to use for intermediate files (default '`/tmp/`').
-- `noclean`     : retain intermediate files (flag, default: remove intermediates).
