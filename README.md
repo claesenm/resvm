@@ -43,15 +43,15 @@ These data sets are based on MNIST with digit 7 as positive, with 50 positives a
 instances. The provided positive and unlabeled sets contain 10% contamination.
 
 Train an RESVM with 200 base models, each trained using 10 positives and 100 unlabeled instances.
-The resulting model will be saved in `model.txt`.
+The resulting model will be saved in `model.txt`:
 ```bash
 ./resvm.py train data=data/train.libsvm nmodels=200 npos=10 nunl=100 c=1 wpos=1.6 model=model.txt
 ```
 
-Predict the test set using the model we trained and save to `predictions.txt`. The output file
-contains predicted labels in the first column and decision values in the second.
+Predict the test set using the model we trained and save to `predictions.txt`:
 ```bash
 ./resvm.py predict data=data/test.libsvm model=model.txt predictions=predictions.txt
 ```
 
+The output file contains predicted labels in the first column and decision values in the second. 
 To compute area under the PR and ROC curves, please use `./evaluate.py` (requires scikit-learn).
