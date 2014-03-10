@@ -39,8 +39,9 @@ General options related to EnsembleSVM, usable in all tasks listed above:
 #### Example
 
 As an example we have included one pair of training and test sets used in the associated paper.
-These data sets are based on MNIST with digit 7 as positive, with 50 positives and 2000 unlabeled
-instances. The provided positive and unlabeled sets contain 10% contamination.
+These data sets are based on the MNIST digit recognition data set (digit 7 is positive), with 50 
+positives and 2000 unlabeled instances. The provided positive and unlabeled sets contain 10% 
+contamination.
 
 Train an RESVM with 200 base models, each trained using 10 positives and 100 unlabeled instances.
 The resulting model will be saved in `model.txt`:
