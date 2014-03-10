@@ -39,6 +39,8 @@ contains predicted labels in the first column and decision values in the second.
 ./resvm.py predict data=data/test.libsvm model=model.txt predictions=predictions.txt
 ```
 
+To compute area under the PR and ROC curves, please use `./evaluate.py` (requires scikit-learn).
+
 ---
 
 #### EnsembleSVM
