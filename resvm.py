@@ -194,9 +194,11 @@ gamma       : set gamma in kernel function  (default 1.0)""")
     else:
         print(
 """Script for the Robust Ensemble of SVMs (RESVM) method.
-For algorithm details, please refer to http://arxiv.org/abs/1402.3144.
+For algorithm details, please refer to:
+    ftp://ftp.esat.kuleuven.be/pub/SISTA/claesenm/reports/14-22.pdf
 For additional information, updates or bug reports, please refer to:
-https://github.com/claesenm/resvm.
+    https://github.com/claesenm/resvm.
+If you use this software in research, please cite the associated paper.
 
 This script allows you to perform the following tasks:
 train          : train an RESVM model.
