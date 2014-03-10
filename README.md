@@ -32,4 +32,4 @@ General options related to EnsembleSVM, usable in all tasks listed above:
 ---
 
 For additional information, updates or bug reports, please refer to:
-    https://github.com/claesenm/resvm.
+    https://github.com/claesenm/resvm
