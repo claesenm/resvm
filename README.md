@@ -14,7 +14,7 @@ To perform a specific task, call `./resvm.py task options`.
 An overview of task specific arguments is shown using `./resvm.py help task`.
 
 Training and testing data files must be provided in LIBSVM format, e.g.
-> label index_1:value_1 index_2:value_2 ... index_n:value_n
+> label index_1:value_1 index_2:value_2 ... index_p:value_p
 
 ---
 
