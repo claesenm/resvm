@@ -16,9 +16,12 @@ An overview of task specific arguments is shown using `./resvm.py help task`.
 Training and testing data files must be provided in LIBSVM format, e.g.
 > label index_1:value_1 index_2:value_2 ... index_p:value_p
 
+For additional information, updates or bug reports, please refer to:
+    https://github.com/claesenm/resvm
+
 ---
 
-# Example
+#### Example
 
 ```bash
 todo
@@ -26,7 +29,7 @@ todo
 
 --
 
-# EnsembleSVM
+#### EnsembleSVM
 
 This script generates intermediate files in a folder of your choosing. 
 The EnsembleSVM library is used as a back-end and must be installed.
@@ -38,8 +41,3 @@ General options related to EnsembleSVM, usable in all tasks listed above:
 - `esvm-suffix` : suffix used in all EnsembleSVM executables (default '').
 - `work-dir`    : working directory to use for intermediate files (default '`/tmp/`').
 - `noclean`     : retain intermediate files (flag, default: remove intermediates).
-
----
-
-For additional information, updates or bug reports, please refer to:
-    https://github.com/claesenm/resvm
