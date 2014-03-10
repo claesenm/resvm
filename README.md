@@ -18,6 +18,16 @@ Training and testing data files must be provided in LIBSVM format, e.g.
 
 ---
 
+# Example
+
+```bash
+todo
+```
+
+--
+
+# EnsembleSVM
+
 This script generates intermediate files in a folder of your choosing. 
 The EnsembleSVM library is used as a back-end and must be installed.
 EnsembleSVM is freely available at: 
